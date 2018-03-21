@@ -24,10 +24,11 @@
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Things I Can Do</a></li>
-						<li><a href="#three">A Few Accomplishments</a></li>
-						<li><a href="#four">Contact</a></li>
+						<li><a href="#about" class="active">About</a></li>
+						<li><a href="#slides">Slides</a></li>
+						<li><a href="#opensource">Open source</a></li>
+						<li><a href="#writings">Writings</a></li>
+						<li><a href="#projects">Projects</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -48,7 +49,7 @@
 					<div id="main">
 
 						<!-- About -->
-							<section id="one">
+							<section id="about">
 								<div class="container">
 									<header class="major">
 										<h3>About</h3>
@@ -62,54 +63,95 @@
 								</div>
 							</section>
 
-						<!-- Two -->
-							<section id="two">
+						<!-- Slides -->
+							<section id="slides">
 								<div class="container">
-									<h3>Things I Can Do</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
-									<ul class="feature-icons">
-										<li class="fa-code">Write all the code</li>
-										<li class="fa-cubes">Stack small boxes</li>
-										<li class="fa-book">Read books and stuff</li>
-										<li class="fa-coffee">Drink much coffee</li>
-										<li class="fa-bolt">Lightning bolt</li>
-										<li class="fa-users">Shadow clone technique</li>
-									</ul>
+									<h3>Slides</h3>
+									<p>Some recent talks</p>
+									<iframe src="//slides.com/wolfapple/msa_fp/embed?style=light" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 								</div>
 							</section>
 
-						<!-- Three -->
-							<section id="three">
+						<!-- Open source -->
+							<section id="opensource">
 								<div class="container">
-									<h3>A Few Accomplishments</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+									<h3>Open source</h3>
+									<p>Participating in open source projects</p>
+									<h4><a href="https://github.com/twitter/finatra">Finatra</a></h4>
+									<blockquote><a href="https://github.com/twitter/finatra/pull/400">Change the constructor parameter of HttpClientException</a></blockquote>
+									<h4><a href="https://github.com/openzipkin/zipkin-finagle">zipkin-finagle</a></h4>
+									<blockquote><a href="https://github.com/openzipkin/zipkin-finagle/pull/31">Updates to finagle 6.45.0</a></blockquote>									
+								</div>
+							</section>
+
+						<!-- Writings -->
+							<section id="writings">
+								<div class="container">
+									<h3>Writings</h3>
+									<p>I make occasional writings on my <a href="https://medium.com/@wolfapple" >Medium</a></p>
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h4><a href="https://medium.com/@wolfapple">Understanding SSD MultiBox — Real-Time Object Detection In Deep Learning</a></h4>
+											<p>This post is meant to constitute an intuitive explanation of the SSD MultiBox object detection technique. I have tried to minimise the...</p>
+										</article>
+										<article>
+											<h4><a href="https://medium.com/@wolfapple">Gradient Descent Algorithm and Its Variants</a></h4>
+											<p>Optimization refers to the task of minimizing/maximizing an objective function f(x) parameterized by x. In machine/deep learning...</p>
+										</article>
+										<article>
+											<h4><a href="https://medium.com/@wolfapple">When Self Driving Cars Cause Accidents — Who Is At Fault?</a></h4>
+											<p>There have been recent accidents involving self-driving autonomous cars that are getting attention. There was a GM Chevy Bolt involved in...</p>
+										</article>
+									</div>
+								</div>
+							</section>
+						
+						<!-- Porjects -->
+							<section id="projects">
+								<div class="container">
+									<h3>Porjects</h3>
+									<p>Featured personal projects. All my projects can be found in my <a href="https://github.com/wolfapple">Github</a></p>
+									<div class="features">
+										<article>
+											<a href="https://github.com/wolfapple/CarND-Advanced-Lane-Lines" class="image"><img src="images/lane_finding.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Possibly broke spacetime</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>Advanced Lane Finding</h4>
+												<p>Built an advanced lane-finding algorithm using distortion correction, image rectification, color transforms, and gradient thresholding. Identified lane curvature and vehicle displacement. Overcame environmental challenges such as shadows and pavement changes.</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<a href="https://github.com/wolfapple/CarND-Vehicle-Detection" class="image"><img src="images/vehicle_detection.png" alt="" /></a>
 											<div class="inner">
-												<h4>Terraformed a small moon</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>Vehicle Detection and Tracking</h4>
+												<p>Created a vehicle detection and tracking pipeline with OpenCV, histogram of oriented gradients (HOG), and support vector machines (SVM). Optimized and evaluated the model on video data from a automotive camera taken during highway driving.</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<a href="https://github.com/wolfapple/CarND-Traffic-Sign-Classifier-Project" class="image"><img src="images/traffic_sign.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Snapped dark matter in the wild</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>Traffic Sign Classification</h4>
+												<p>Built and trained a deep neural network to classify traffic signs, using TensorFlow. Experimented with different network architectures. Performed image pre-processing and validation to guard against overfitting.</p>
+											</div>
+										</article>
+										<article>
+											<a href="https://github.com/wolfapple/CarND-Behavioral-Cloning-Project" class="image"><img src="images/behavioral_cloning.png" alt="" /></a>
+											<div class="inner">
+												<h4>Use Deep Learning to Clone Driving Behavior</h4>
+												<p>Built and trained a convolutional neural network for end-to-end driving in a simulator, using TensorFlow and Keras. Used optimization techniques such as regularization and dropout to generalize the network for driving on multiple tracks.</p>
+											</div>
+										</article>
+										<article>
+											<a href="https://github.com/wolfapple/CarND-Semantic-Segmentation" class="image"><img src="images/semantic_segmentation.png" alt="" /></a>
+											<div class="inner">
+												<h4>Semantic Segmentation</h4>
+												<p>Labeled the pixels of a road in images using a Fully Convolutional Network (FCN).</p>
 											</div>
 										</article>
 									</div>
 								</div>
 							</section>
 
-						<!-- Four -->
+						<!-- Contanct -->
 							<section id="four">
 								<div class="container">
 									<h3>Contact Me</h3>
